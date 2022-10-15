@@ -32,7 +32,7 @@ QCOM_BOARD_PLATFORMS += $(TARGET_BOARD_PLATFORM)
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 
 TARGET_KERNEL_ARCH := $(TARGET_ARCH)
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
@@ -59,7 +59,7 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS := \
     --dtb $(DEVICE_PATH)/prebuilt/dtb \
-    --board SRPUE26A001 \
+    --board SRPUF24A001 \
     --kernel_offset 0x00008000 \
     --ramdisk_offset 0x02000000 \
     --tags_offset 0x01e00000 \
@@ -76,9 +76,9 @@ BOARD_ROOT_EXTRA_FOLDERS := \
 # Android Verified Boot
 BOARD_AVB_ENABLE := false
 
-# Samsung TS drivers (a52sxq)
+# Samsung TS drivers (m52xq)
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-TW_LOAD_VENDOR_MODULES := "sec_cmd.ko sec_common_fn.ko sec_secure_touch.ko sec_tclm_v2.ko sec_tsp_dumpkey.ko sec_tsp_log.ko stm_ts.ko"
+TW_LOAD_VENDOR_MODULES := "sec_cmd.ko sec_common_fn.ko sec_secure_touch.ko sec_tclm_v2.ko sec_tsp_dumpkey.ko sec_tsp_log.ko synaptics_ts.ko"
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
@@ -94,7 +94,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Dynamic partitions
-BOARD_SUPER_PARTITION_SIZE := 10643046400
+BOARD_SUPER_PARTITION_SIZE := 10328473600
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 10638852096
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system odm product vendor
