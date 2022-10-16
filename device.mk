@@ -50,4 +50,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/sec_tclm_v2.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sec_tclm_v2.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/sec_tsp_dumpkey.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sec_tsp_dumpkey.ko \
     $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/sec_tsp_log.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/sec_tsp_log.ko \
-    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/synaptics_ts.ko.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/synaptics_ts.ko.ko
+    $(LOCAL_PATH)/recovery/root/vendor/lib/modules/1.1/synaptics_ts.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1/synaptics_ts.ko
