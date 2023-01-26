@@ -58,7 +58,7 @@ BOARD_KERNEL_CMDLINE := \
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS := \
-    --dtb $(DEVICE_PATH)/prebuilt/dtb \
+    --dtb $(DEVICE_PATH)/prebuilt/dtb.img \
     --board SRPUF24A001 \
     --kernel_offset 0x00008000 \
     --ramdisk_offset 0x02000000 \
