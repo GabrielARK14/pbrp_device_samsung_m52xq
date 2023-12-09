@@ -1,0 +1,2 @@
+# Soft dependencies extracted from modules themselves.
+softdep synaptics_ts pre: acpm-mfd-bus
